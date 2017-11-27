@@ -5,9 +5,9 @@ const Alert = ({
   alertType = 'primary',
   children
 }) => (
-    <div className={ `alert alert-${alertType}` } role={ role } >
-      { children }
-    </div>
+  <div className={ `alert alert-${alertType}` } role={ role } >
+    { children }
+  </div>
 )
 
 export default Alert
