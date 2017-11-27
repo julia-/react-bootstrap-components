@@ -28,10 +28,10 @@ class App extends Component {
         <Alert role='alert'>
           This is a primary alert—check it out!
         </Alert>
-        <Alert alertType='info' role='alert'>
+        <Alert alertType='info'>
           This is a info alert—check it out!
         </Alert>
-        <Alert alertType='secondary' role='alert'>
+        <Alert alertType='secondary'>
           This is a secondary alert—check it out!
         </Alert>
         <Card bgColor='info' textColor='white'>
