@@ -13,7 +13,7 @@ const Card = ({
 const CardHeader = ({
   children
 }) => (
-  <div class="card-header">
+  <div className="card-header">
     { children }
   </div>
 )
@@ -29,16 +29,16 @@ const CardBody = ({
 const CardTitle = ({
   children
 }) => (
-    <h4 className="card-title">
-      {children}
-    </h4>
-  )
+  <h4 className="card-title">
+    { children }
+  </h4>
+)
 
 const CardText = ({
   children
 }) => (
   <p className="card-text">
-    {children}
+    { children }
   </p>
 )
 
