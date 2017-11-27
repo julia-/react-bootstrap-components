@@ -16,4 +16,26 @@ const Button = ({
   )
 }
 
-export default Button
+const ButtonGroup = ({
+  buttonType = 'group',
+  inputGroup = false,
+  sizing,
+  children
+}) => {
+  if (inputGroup === true) {
+    return (
+      <div className="input-group" role={buttonType} >
+        {children}
+      </div>
+    )
+  } else {
+    return (
+      <div className={`btn-${buttonType}`} role={ buttonType} >
+        {children}
+      </div>
+    )
+
+  }
+}
+
+export {Button, ButtonGroup}
