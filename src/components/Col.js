@@ -9,11 +9,31 @@ function classNameForWidth(width) {
   }
 }
 
+function classNameForSize(size, width) {
+  if (!width) {
+    return ''
+  }
+  else if (width === true){
+    return `col-${size}`
+  }
+  else {
+    return `col-${size}-${width}`
+  }
+}
+
 const Col = ({
   children,
-  width
+  width,
+  sm,
+  md,
+  lg
 }) => (
-  <div className={ classNameForWidth(width) }>
+  <div className={[
+    classNameForWidth(width),
+    classNameForSize('sm', sm),
+    classNameForSize('md', md),
+    classNameForSize('lg', lg)
+    ].join(' ')}>
     { children }
   </div>
 )
