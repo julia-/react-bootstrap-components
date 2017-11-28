@@ -25,6 +25,10 @@ class App extends Component {
             <Col width={4}>A</Col>
             <Col width={8}>B</Col>
           </Row>
+          <Row>
+            <Col sm={4}>A</Col>
+            <Col sm={8}>B</Col>
+          </Row>
           <div className='mt-3'>
             <Button title='Google' href='https://www.google.com/' />
             <Button title='Second' variation='primary' />
